@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper-outer">
+  <div class="wrapper">
+    <header class="header">
+      <a class="logo" href="/">
+        <div class="img-container">
+          <!--          <img src="" alt="Logo">-->
+          Logo
+        </div>
+      </a>
+      <div class="menu">
+        <ul class="header-menu">
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">проекты</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link">о компании</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="/" class="header-menu-link active">контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <div class="languages">
+          <a href="/" class="languages-item active">RU</a>
+          <a href="/" class="languages-item">EN</a>
+        </div>
+        <div class="start-project">
+          <a href="/" class="start-project-link">
+            <span class="start-project-text">Начать проект</span>
+            <span class="arrow-icon">
+              <img src="img/arrow.svg">
+            </span></a>
+
+        </div>
+      </div>
+      <button class="burger">
+        <span></span>
+      </button>
+
+
+    </header>
+    <section class="contact">
+
+      <div class="contact-container container">
+        <div class="contact-breadcrumb breadcrumb">
+          <ul class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link" href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="contact-caption">
+          Мы рядом
+        </h2>
+        <h3 class="contact-title">
+          Заполните форму ниже и мы свяжемся с вами. Не любите формы? Напишите нам на почту <a href="mailto:info@site.com" class="e-mail">info@site.com</a>
+        </h3>
+        <form class="contact-form">
+          <div class="contact-form__row">
+            <div class="contact-form__column contact-form__column--form">
+              <div class="contact-form__column-line">
+                <label class="contact-label contact-label--username">
+                  <input class="contact-input" type="text" required="">
+                  <span class="contact-hint required">Ваше имя</span>
+                </label>
+                <label class="contact-label contact-label--email">
+                  <input class="contact-input" type="text" required="">
+                  <span class="contact-hint required">Ваш E-Mail</span>
+                </label>
+              </div>
+              <div class="contact-form__column-line">
+                <label class="contact-label contact-label--textarea">
+                  <textarea class="contact-textarea" required=""></textarea>
+                  <span class="contact-hint required">Комментарий</span>
+                </label>
+              </div>
+              <div class="contact-form__column-line">
+                <label class="contact-form__label">
+                  <span class="contact-form__checkbox">
+                    <input class="contact-form__checkbox-input" type="checkbox">
+                    <span class="contact-form__checkbox-around"></span>
+                  </span>
+                  <div class="contact-form__text">
+                    Согласен с
+                    <a class="contact-form__link" href="">
+                      Политикой конфиденциальности
+                    </a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="contact-form__column contact-form__column--send">
+              <button class="contact-form__column--send-button" id="submitForm" data-text="Отправить" data-text-click="Ваше сообщение отправлено!">
+                <div class="contact-form__column--send-icon">
+                  <div class="img-container">
+                    <img src="img/send.svg">
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-logo__block">
+        <a class="footer-logo logo" href="/">
+          <div class="img-container">
+            <!--          <img src="" alt="Logo">-->
+            Logo
+          </div>
+        </a>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav__column">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <span>
+              Услуги
+              </span>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Support and development
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                UI/UX and product design
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Progressive Web
+                <br>
+                Applications (PWA)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <span>
+              Компания
+              </span>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                О компании
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Проекты
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <span>
+              Контакты
+              </span>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link footer-nav__link--download" href="">
+                Скачать презентацию
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link footer-nav__link--contact" href="tel:+7499999-99-99">
+                +7 (499) 999-99-99
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="mailto:info@site.com">
+                info@site.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social social">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="">
+              <div class="img-container">
+                <img src="img/telegram.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="">
+              <div class="img-container">
+                <img src="img/whatsapp.svg" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-text">© Company 2022. All rights reserved.</div>
+        <a class="footer-bottom-link" href="/">Политика конфиденциальночти</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
