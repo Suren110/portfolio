@@ -1,0 +1,45 @@
+/* normalize.scss */
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+/* global style */
+@import "variable.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "core.scss";
+
+@import "blocks/header";
+@import "blocks/gallery";
+@import "blocks/about";
+@import "blocks/product";
+@import "blocks/news";
+@import "blocks/footer";
+
+//news
+@import "blocks/position";
+@import "blocks/news-page";
+
+//marinade
+@import "blocks/marinade";
+
+//marinade-show
+@import "blocks/marinade-show";
+
+//news read
+@import "blocks/news-read";
+
+//geography
+@import "blocks/geography";
+
+//contact
+@import "blocks/contact";
+
+//map
+@import "blocks/map";
+
+//company
+@import "blocks/company";
+
+//company about
+@import "blocks/company-about";
+@import "blocks/company-desc";
+@import "blocks/company-history";

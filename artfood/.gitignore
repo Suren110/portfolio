@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+package.json
+node_modules/
+pixel-perfect/
+npm-debug.*
+Thumbs.db

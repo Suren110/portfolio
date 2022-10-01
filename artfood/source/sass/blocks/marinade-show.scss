@@ -1,0 +1,206 @@
+.marinade__view {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.marinade__view-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.marinade__view-item {
+  display: flex;
+  box-shadow: 0 5px 25px 0 rgba(0, 1, 1, 0.1);
+}
+
+.marinade__view-item__left {
+  position: relative;
+  width: 50%;
+  flex-shrink: 0;
+  background-color: rgba(var(--art-white), 1);
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 75.2%;
+  }
+
+  .img-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.marinade__view-item__left-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.marinade__view-item__right {
+  padding-top: 50px;
+  padding-right: 5%;
+  padding-bottom: 42px;
+  padding-left: 5%;
+  background-color: rgba(var(--art-green-light-3), 1);
+  flex-grow: 1;
+}
+
+.marinade__view-item__right-caption {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: rgba(var(--art-white), 1);
+}
+
+.marinade__view-item__right-title {
+  font-weight: 700;
+  font-size: 1.56rem;
+  color: rgba(var(--art-green-light-2), 1);
+  margin-top: 0;
+
+  border-bottom: 1px solid rgba(var(--art-green), 0.4);
+
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.marinade__view-item__right-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  border-bottom: 1px solid rgba(var(--art-green), 0.4);
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.marinade__view-item__right-item {
+  font-weight: 500;
+  color: rgba(var(--art-green-light-2), 1);
+  text-transform: uppercase;
+
+  span {
+    color: rgba(var(--art-white-2), 1);
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.marinade__view-item__right-info {
+  font-weight: 700;
+  color: rgba(var(--art-white-2), 1);
+
+  border-bottom: 1px solid rgba(var(--art-green), 0.4);
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  span {
+    color: rgba(var(--art-green-light-2), 1);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.marinade__view-item__right-kind {
+  font-weight: 700;
+  color: rgba(var(--art-green-light-2), 1);
+
+  padding-left: 42px;
+
+  border-bottom: 1px solid rgba(var(--art-green), 0.4);
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+
+  background-repeat: no-repeat;
+  background-position: left 5px top;
+  background-size: auto 22px;
+  background-image: url("../../img/icons/eco.png");
+}
+
+.marinade__view-item__right-contact {
+  display: inline-flex;
+  font-size: 0.81rem;
+  color: rgba(var(--art-white-2), 0.8);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  padding-right: 45px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 32px auto;
+  background-image: url("../../img/icons/arrow-right-white-icon.png");
+
+  &:hover {
+    color: rgba(var(--art-green), 1);
+    background-image: url("../../img/icons/arrow-right-icon.png");
+  }
+}
+
+@media (max-width: 1200px) {
+  .marinade__view {
+    padding-bottom: 60px;
+  }
+
+  .marinade__view-item__right {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .marinade__view-item__right-caption {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .marinade__view-item__right-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+  }
+
+  .marinade__view-item__right-list {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .marinade__view-item__right-item {
+    font-size: 0.8rem;
+  }
+
+  .marinade__view-item__right-info {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 0.75rem;
+  }
+
+  .marinade__view-item__right-kind {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .marinade__view-item {
+    flex-direction: column;
+  }
+
+  .marinade__view-item__left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .marinade__view-item__right-caption {
+    font-size: 1.7rem;
+  }
+
+  .marinade__view-item__right-title {
+    font-size: 1rem;
+  }
+}

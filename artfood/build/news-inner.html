@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper-outer">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="logo header__logo" href="index.html">
+            <div class="img-container">
+              <img class="header__logo-img" src="img/logo.svg" alt="Logo">
+            </div>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="company.html">
+                  company
+                </a>
+              </li>
+              <!--              TODO: add this class for dropdown header__nav-item__hover-->
+              <li class="header__nav-item header__nav-item__hover">
+                <a class="header__nav-link" href="brands.html">
+                  Brands & Products
+                </a>
+                <div class="dropdown">
+                  <div class="dropdown__wrapper">
+                    <div class="dropdown__list-container">
+                      <h2 class="dropdown__list-caption">
+                        Artfood
+                      </h2>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Canned vegetables
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="marinades.html">
+                            Marinades
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Compotes
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Preserves
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Jams
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Vinegars
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Ketchups
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__list-container__many">
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Like a chef
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Tomato sauces
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Natura
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Juices & nectars
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown__list-container__many">
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Amare
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Freshly squeezed juices
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Vitamix
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Vitamin rich drinks
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown__product">
+                      <div class="dropdown__product-caption">
+                        Bestseller product
+                      </div>
+                      <div class="dropdown__product-desc">
+                        <div class="dropdown__product-desc__img">
+                          <div class="img-container">
+                            <img class="dropdown__product-desc__img-source" src="img/dropdown/item-1.png" alt="Image of product">
+                          </div>
+                        </div>
+                        <div class="dropdown__product-desc__info">
+                          <div class="dropdown__product-desc__info-caption">
+                            Tomato sauce Pizza
+                          </div>
+                          <div class="dropdown__product-desc__info-title">
+                            Like a chef
+                          </div>
+                          <div class="dropdown__product-desc__info-about">
+                            <strong>
+                              Ingredients:
+                            </strong>
+                            Tomato pulp, tomato
+                            paste, salt, dried basil,
+                            dried oregano.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--              TODO: add active for header__nav-item for clicked-->
+              <li class="header__nav-item active">
+                <a class="header__nav-link" href="geography.html">
+                  Our Geography
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="news.html">
+                  News
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="contact.html">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__mobile-menu">
+            <span class="header__mobile-menu__line header__mobile-menu__line-top"></span>
+            <span class="header__mobile-menu__line header__mobile-menu__line-middle"></span>
+            <span class="header__mobile-menu__line header__mobile-menu__line-bottom"></span>
+          </a>
+          <div class="header__language">
+            <button class="header__language-btn">
+              EN
+            </button>
+            <ul class="header__language-list">
+              <li class="header__language-item">
+                <a class="header__language-item__btn">
+                  ru
+                </a>
+              </li>
+              <li class="header__language-item">
+                <a class="header__language-item__btn">
+                  am
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="position">
+        <div class="container">
+          <ul class="position__list">
+<!--            TODO: add active for position__item-->
+            <li class="position__item active">
+              <a class="position__link" href="">home</a>
+            </li>
+            <li class="position__item active">
+              <a class="position__link" href="">news</a>
+            </li>
+            <li class="position__item">
+              <a class="position__link" href="">Opening of the modernized Artashat cannery</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="news-read">
+        <div class="container">
+          <div class="news-read__slider">
+            <div class="news-read__slider-left">
+              <div class="img-container">
+                <div class="swiper-container news-inner__container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="news-read__slider-left__img" src="img/news-inner/item-1.jpg" alt="slider image news">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="news-read__slider-left__img" src="img/news/item-1.jpg" alt="slider image news">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="news-read__slider-left__img" src="img/news/item-3.jpg" alt="slider image news">
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                </div>
+              </div>
+            </div>
+            <div class="news-read__slider-right">
+              <div class="news-read__slider-right__date">
+                September 24, 2018
+              </div>
+              <h2 class="news-read__slider-right__caption">
+                Opening of the
+                modernized Artashat
+                cannery
+              </h2>
+            </div>
+          </div>
+          <div class="news-read__about">
+            <div class="news-read__about-desc">
+              September 22, the opening of the modernized Artashat cannery took place.
+              One of the largest enterprises in Armenia has undergone a $ 3.5 million
+              modernization program. Italy's leading Cavalieri tomato processing equipment
+              was commissioned in the Artfood factory. It is worth mentioning, that today
+              it is the only line in EEU, the technology of which is unique and patented.
+              In the next five years, the company plans to develop work in 4 main areas:
+            </div>
+            <ul class="news-read__about-list">
+              <li class="news-read__about-item">
+                Double the production growth by also improving the productivity
+              </li>
+              <li class="news-read__about-item">
+                Export increase by 3.5 times: products are exported not only to Russia, but also to Georgia, Belgium, the USA, Canada,
+                England and Kazakhstan, negotiations are ongoing with the largest importer of Israel
+              </li>
+              <li class="news-read__about-item">
+                Creation and export of new products
+              </li>
+              <li class="news-read__about-item">
+                An even greater improvement in product quality
+              </li>
+            </ul>
+            <div class="news-read__about-desc">
+              Today, the factory is a reliable partner for more than 2000 suppliers.
+              This year, the number of employees increased by 25%, exceeding 1,000
+              citizens. The company works closely with small and medium-sized
+              businesses. The purchase of agricultural raw materials from
+              farmers doubled this year, exceeding 2 billion drams.
+            </div>
+          </div>
+        </div>
+      </section>
+<!--      TODO: add this class .news-read__info for news in news-inner.html-->
+      <section class="news news-read__info">
+        <div class="container">
+          <div class="news__caption caption">
+            <h3 class="caption__title">
+              Other news
+            </h3>
+          </div>
+          <ul class="news__list">
+            <li class="news__item">
+              <div class="news__item-img">
+                <div class="img-container">
+                  <img class="news__item-img__source" src="img/news/item-1.jpg" alt="news image">
+                </div>
+              </div>
+              <h6 class="news__item-title">
+                Lorem ipsum is simply dummy text
+              </h6>
+              <a class="news__item-link" href="">
+                Learn more
+              </a>
+            </li>
+            <li class="news__item">
+              <div class="news__item-img">
+                <div class="img-container">
+                  <img class="news__item-img__source" src="img/news/item-2.jpg" alt="news image">
+                </div>
+              </div>
+              <h6 class="news__item-title">
+                Lorem Ipsum has been the
+                industry's standard.
+              </h6>
+              <a class="news__item-link" href="">
+                Learn more
+              </a>
+            </li>
+            <li class="news__item">
+              <div class="news__item-img">
+                <div class="img-container">
+                  <img class="news__item-img__source" src="img/news/item-3.jpg" alt="news image">
+                </div>
+              </div>
+              <h6 class="news__item-title">
+                Latin words, combined
+                with a handful of model
+                sentence structures.
+              </h6>
+              <a class="news__item-link" href="">
+                Learn more
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__link-container">
+        <div class="footer__nav-list__container">
+          <ul class="footer__nav-main__list">
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                Our Geography
+              </a>
+            </li>
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                News
+              </a>
+            </li>
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                Contacts
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Company
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Who we are
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Timeline
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--youtube" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container footer__author-container">
+        <div class="footer__rights">
+          © 2020 Artashat Cannery OJSC. All Rights Reserved.
+        </div>
+        <div class="footer__author">
+          Design & DEVELOPMENT by EWORKS
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/header.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/slider-for-news-inner.js"></script>
+
+</body>
+</html>

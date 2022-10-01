@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper-outer">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="logo header__logo" href="index.html">
+            <div class="img-container">
+              <img class="header__logo-img" src="img/logo.svg" alt="Logo">
+            </div>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="company.html">
+                  company
+                </a>
+              </li>
+              <!--              TODO: add this class for dropdown header__nav-item__hover-->
+              <li class="header__nav-item header__nav-item__hover">
+                <a class="header__nav-link" href="brands.html">
+                  Brands & Products
+                </a>
+                <div class="dropdown">
+                  <div class="dropdown__wrapper">
+                    <div class="dropdown__list-container">
+                      <h2 class="dropdown__list-caption">
+                        Artfood
+                      </h2>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Canned vegetables
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="marinades.html">
+                            Marinades
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Compotes
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Preserves
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Jams
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Vinegars
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Ketchups
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__list-container__many">
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Like a chef
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Tomato sauces
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Natura
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Juices & nectars
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown__list-container__many">
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Amare
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Freshly squeezed juices
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Vitamix
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Vitamin rich drinks
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown__product">
+                      <div class="dropdown__product-caption">
+                        Bestseller product
+                      </div>
+                      <div class="dropdown__product-desc">
+                        <div class="dropdown__product-desc__img">
+                          <div class="img-container">
+                            <img class="dropdown__product-desc__img-source" src="img/dropdown/item-1.png" alt="Image of product">
+                          </div>
+                        </div>
+                        <div class="dropdown__product-desc__info">
+                          <div class="dropdown__product-desc__info-caption">
+                            Tomato sauce Pizza
+                          </div>
+                          <div class="dropdown__product-desc__info-title">
+                            Like a chef
+                          </div>
+                          <div class="dropdown__product-desc__info-about">
+                            <strong>
+                              Ingredients:
+                            </strong>
+                            Tomato pulp, tomato
+                            paste, salt, dried basil,
+                            dried oregano.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--              TODO: add active for header__nav-item for clicked-->
+              <li class="header__nav-item active">
+                <a class="header__nav-link" href="geography.html">
+                  Our Geography
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="news.html">
+                  News
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="contact.html">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__mobile-menu">
+            <span class="header__mobile-menu__line header__mobile-menu__line-top"></span>
+            <span class="header__mobile-menu__line header__mobile-menu__line-middle"></span>
+            <span class="header__mobile-menu__line header__mobile-menu__line-bottom"></span>
+          </a>
+          <div class="header__language">
+            <button class="header__language-btn">
+              EN
+            </button>
+            <ul class="header__language-list">
+              <li class="header__language-item">
+                <a class="header__language-item__btn">
+                  ru
+                </a>
+              </li>
+              <li class="header__language-item">
+                <a class="header__language-item__btn">
+                  am
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="position">
+        <div class="container">
+          <ul class="position__list">
+<!--            TODO: add active for position__item-->
+            <li class="position__item active">
+              <a class="position__link" href="">home</a>
+            </li>
+            <li class="position__item">
+              <a class="position__link" href="">company</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="company-about">
+        <div class="container">
+          <div class="company-about__slider">
+            <div class="img-container">
+              <div class="swiper-container company-about__container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="company-about__slider-img" src="img/company-about/item-1.jpg" alt="Company image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="company-about__slider-img" src="img/company-about/item-2.jpg" alt="Company image">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="company-about__slider-img" src="img/company-about/item-3.jpg" alt="Company image">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <section class="company-desc">
+        <div class="container">
+          <h2 class="company-desc__caption">
+            Who we are
+          </h2>
+          <div class="company-desc__info">
+            Artashat Cannery OJSC is one of the leading and largest companies in
+            food industry in Armenia. It is a continually growing and expanding
+            company with a capacity to produce up to 40 million canned goods
+            annually and continues to increase the production volumes. Its
+            history dates back to 1961 when the company started its own small
+            production facility. The mission which “Artashat Cannery” set to
+            itself from the very first days of the company was to provide only
+            high-quality food products which would improve one’s quality of life.
+            The company presents Artfood and Janarat brands in the assortment of
+            vegetables, marinades, jams, compotes, canned food, as well as Amare,
+            Natura and Vitamix brands with various fruit juices. Artashat Cannery is
+            the only producer in the EAEU to use Italian <strong>Cavalieri</strong> production line.
+            The company has been awarded with dozens of medals and diplomas for its
+            high-quality products and compliance with international standards.
+          </div>
+          <ul class="company-desc__list">
+            <li class="company-desc__item">
+              <div class="company-desc__item-img">
+                <div class="img-container">
+                  <img class="company-desc__item-img__source" src="img/company-desc/item-1.png" alt="Company desc icon">
+                </div>
+              </div>
+              <div class="company-desc__item-caption">
+                Eco
+              </div>
+              <div class="company-desc__item-info">
+                friendly raw materials
+              </div>
+            </li>
+            <li class="company-desc__item">
+              <div class="company-desc__item-img">
+                <div class="img-container">
+                  <img class="company-desc__item-img__source" src="img/company-desc/item-2.png" alt="Company desc icon">
+                </div>
+              </div>
+              <div class="company-desc__item-caption">
+                22
+              </div>
+              <div class="company-desc__item-info">
+                exporting
+                countries
+              </div>
+            </li>
+            <li class="company-desc__item">
+              <div class="company-desc__item-img">
+                <div class="img-container">
+                  <img class="company-desc__item-img__source" src="img/company-desc/item-3.png" alt="Company desc icon">
+                </div>
+              </div>
+              <div class="company-desc__item-caption">
+                1000+
+              </div>
+              <div class="company-desc__item-info">
+                highly qualified
+                staff
+              </div>
+            </li>
+            <li class="company-desc__item">
+              <div class="company-desc__item-img">
+                <div class="img-container">
+                  <img class="company-desc__item-img__source" src="img/company-desc/item-4.png" alt="Company desc icon">
+                </div>
+              </div>
+              <div class="company-desc__item-caption">
+                2000+
+              </div>
+              <div class="company-desc__item-info">
+                providers
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="company-history">
+        <div class="container">
+          <div class="company-history__slider">
+            <div class="img-container">
+              <div class="swiper-container company-history__container">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        1961
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        1970
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        1982
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        1991
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        1999
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2002
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2005
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2006
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2007
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2008
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2010
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="company-history__slider-desc">
+                      <div class="company-history__slider-desc__date">
+                        2018
+                      </div>
+                      <div class="company-history__slider-desc__info">
+                        A new manufacture was opened. The leading Cavalieri equipment
+                        for tomato processing was put into exploitation. A new manufacture
+                        was opened. The leading Cavalieri equipment for tomato processing.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="company-history__slider-header">
+                  <div class="company-history__slider-header__caption">
+                    Our history
+                  </div>
+                </div>
+
+                <ul class="company-history__slider-header__list swiper-pagination"></ul>
+
+              </div>
+            </div>
+
+            <div class="swiper-button-prev swiper-button-prev-company-brand"></div>
+            <div class="swiper-button-next swiper-button-next-company-brand"></div>
+          </div>
+        </div>
+      </section>
+
+<!--      TODO: add .company-desc__news this class in company.html-->
+      <section class="news company-desc__news">
+        <div class="container">
+          <div class="news__caption caption">
+            <h3 class="caption__title">
+              Our news
+            </h3>
+            <a class="caption__link" href="">
+              see all
+            </a>
+          </div>
+          <ul class="news__list">
+            <li class="news__item">
+              <div class="news__item-img">
+                <div class="img-container">
+                  <img class="news__item-img__source" src="img/news/item-1.jpg" alt="news image">
+                </div>
+              </div>
+              <h6 class="news__item-title">
+                Lorem ipsum is simply dummy text
+              </h6>
+              <a class="news__item-link" href="">
+                Learn more
+              </a>
+            </li>
+            <li class="news__item">
+              <div class="news__item-img">
+                <div class="img-container">
+                  <img class="news__item-img__source" src="img/news/item-2.jpg" alt="news image">
+                </div>
+              </div>
+              <h6 class="news__item-title">
+                Lorem Ipsum has been the
+                industry's standard.
+              </h6>
+              <a class="news__item-link" href="">
+                Learn more
+              </a>
+            </li>
+            <li class="news__item">
+              <div class="news__item-img">
+                <div class="img-container">
+                  <img class="news__item-img__source" src="img/news/item-3.jpg" alt="news image">
+                </div>
+              </div>
+              <h6 class="news__item-title">
+                Latin words, combined
+                with a handful of model
+                sentence structures.
+              </h6>
+              <a class="news__item-link" href="">
+                Learn more
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__link-container">
+        <div class="footer__nav-list__container">
+          <ul class="footer__nav-main__list">
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                Our Geography
+              </a>
+            </li>
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                News
+              </a>
+            </li>
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                Contacts
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Company
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Who we are
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Timeline
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--youtube" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container footer__author-container">
+        <div class="footer__rights">
+          © 2020 Artashat Cannery OJSC. All Rights Reserved.
+        </div>
+        <div class="footer__author">
+          Design & DEVELOPMENT by EWORKS
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/header.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/slider-for-gallery.js"></script>
+  <script src="js/slider-for-product.js"></script>
+  <script src="js/slider-for-brand.js"></script>
+  <script src="js/slider-for-company-about.js"></script>
+
+</body>
+</html>

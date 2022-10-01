@@ -1,0 +1,318 @@
+.company-history {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/company-history/bg.jpg");
+}
+
+.company-history__slider-header__item {
+  outline: none;
+}
+
+.company-history__slider {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 33.5%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 44px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+    transform: translateX(calc(-100% - 35px));
+    background-image: url("../../img/icons/arrow-left-icon.png");
+  }
+
+  .swiper-button-next {
+    right: 0;
+    transform: translateX(calc(100% + 35px));
+    background-image: url("../../img/icons/arrow-right-icon.png");
+  }
+
+  .swiper-slide {
+    padding-top: 170px;
+    padding-bottom: 40px;
+  }
+}
+
+.company-history__container {
+  width: 100%;
+  height: 100%;
+
+  .swiper-pagination {
+    width: 76.4%;
+    top: 75px;
+    right: 0;
+    bottom: auto;
+    left: auto;
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    opacity: 1;
+
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: rgba(var(--art-green-light-2), 0.8);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) translateY(50%);
+      border-radius: 50%;
+      width: 11px;
+      height: 11px;
+      background-color: rgba(var(--art-green-light-2), 1);
+    }
+
+    &.swiper-pagination-bullet-active {
+      color: rgba(var(--art-green-light), 1);
+      font-size: 1.56rem;
+      padding-bottom: 12px;
+    }
+
+    &.swiper-pagination-bullet-active::after {
+      width: 15px;
+      height: 15px;
+      background-color: rgba(var(--art-green-light), 1);
+    }
+  }
+}
+
+.company-history__slider-header {
+  position: absolute;
+  top: 68px;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.company-history__slider-header__caption {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: rgba(var(--art-green-light-2), 1);
+  //margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.company-history__slider-header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  flex-grow: 1;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(var(--art-green-light-2), 1);
+}
+
+.company-history__slider-desc {
+  position: relative;
+
+  //width: 80%;
+  margin-left: 40px;
+}
+
+.company-history__slider-desc__date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-30%);
+
+  font-weight: 700;
+  font-family: "Lora";
+  font-size: 11.25rem;
+  color: rgba(var(--art-black), 0.2);
+}
+
+.company-history__slider-desc__info {
+  font-size: 1.56rem;
+  color: rgba(var(--art-gray-dark), 1);
+  font-weight: 400;
+  line-height: 1.68;
+
+  //overflow: hidden;
+  //text-overflow: ellipsis;
+  //display: -webkit-box;
+  //-webkit-line-clamp: 3;
+  //-webkit-box-orient: vertical;
+
+  width: 79%;
+  margin-left: auto;
+}
+
+@media (max-width: 1440px) {
+  .company-history__container {
+    .swiper-pagination {
+      width: 100%;
+    }
+  }
+
+  .company-history__slider-header {
+    top: 20px;
+    right: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .company-history__slider {
+    min-height: 350px;
+  }
+
+  .company-history__slider {
+    .swiper-button-prev-company-brand {
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+
+    .swiper-button-next-company-brand {
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  //.company-history__slider {
+  //  .swiper-slide {
+  //    padding-top: 30px;
+  //    padding-bottom: 30px;
+  //  }
+  //}
+  .company-history__slider .swiper-button-prev-company-brand,
+  .company-history__slider .swiper-button-next-company-brand {
+    display: none;
+  }
+
+  .company-history__slider-header {
+    flex-direction: column;
+  }
+
+  //.company-history__slider-header__caption {
+  //  margin-right: auto;
+  //  margin-left: auto;
+  //  margin-bottom: 20px;
+  //}
+
+  .company-history__slider-header__list {
+    width: 100%;
+  }
+
+  .company-history__slider-header__caption {
+    font-size: 2rem;
+  }
+
+  .company-history__slider-desc__info {
+    font-size: 1.1rem;
+  }
+
+  .company-history__slider-desc__date {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-history__slider-header__caption {
+    margin-bottom: 10px;
+  }
+
+  .company-history__container .company-history__slider-header__item {
+    font-size: 0.7rem;
+
+    &.swiper-pagination-bullet-active {
+      font-size: 1rem;
+    }
+  }
+
+  .company-history__slider-desc__date {
+    font-size: 6rem;
+  }
+
+  .company-history__slider-desc__info {
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+    //display: -webkit-box;
+    //-webkit-line-clamp: 5;
+    //-webkit-box-orient: vertical;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-history .container {
+    width: 98%;
+  }
+
+  .company-history__slider-header__caption {
+    font-size: 1.5rem;
+  }
+
+  .company-history__container {
+    .swiper-pagination {
+      top: 65px;
+    }
+
+    .swiper-slide {
+      padding-top: 120px;
+    }
+  }
+
+  .company-history__container .company-history__slider-header__item {
+    font-size: 0.45rem;
+
+    &.swiper-pagination-bullet-active {
+      font-size: 0.75rem;
+
+      &::after {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .company-history__slider-desc {
+    margin-top: auto;
+  }
+
+  .company-history__slider-desc__info {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .company-history__slider-desc__date {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translateY(40%);
+    color: rgba(var(--art-black), 0.1);
+  }
+}
+

@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper-outer">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="logo header__logo" href="index.html">
+            <div class="img-container">
+              <img class="header__logo-img" src="img/logo.svg" alt="Logo">
+            </div>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="company.html">
+                  company
+                </a>
+              </li>
+              <!--              TODO: add this class for dropdown header__nav-item__hover-->
+              <li class="header__nav-item header__nav-item__hover">
+                <a class="header__nav-link" href="brands.html">
+                  Brands & Products
+                </a>
+                <div class="dropdown">
+                  <div class="dropdown__wrapper">
+                    <div class="dropdown__list-container">
+                      <h2 class="dropdown__list-caption">
+                        Artfood
+                      </h2>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Canned vegetables
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="marinades.html">
+                            Marinades
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Compotes
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Preserves
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Jams
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Vinegars
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="">
+                            Ketchups
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__list-container__many">
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Like a chef
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Tomato sauces
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Natura
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Juices & nectars
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown__list-container__many">
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Amare
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Freshly squeezed juices
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown__list-container__many-item">
+                        <h2 class="dropdown__list-caption">
+                          Vitamix
+                        </h2>
+                        <ul class="dropdown__list">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="">
+                              Vitamin rich drinks
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown__product">
+                      <div class="dropdown__product-caption">
+                        Bestseller product
+                      </div>
+                      <div class="dropdown__product-desc">
+                        <div class="dropdown__product-desc__img">
+                          <div class="img-container">
+                            <img class="dropdown__product-desc__img-source" src="img/dropdown/item-1.png" alt="Image of product">
+                          </div>
+                        </div>
+                        <div class="dropdown__product-desc__info">
+                          <div class="dropdown__product-desc__info-caption">
+                            Tomato sauce Pizza
+                          </div>
+                          <div class="dropdown__product-desc__info-title">
+                            Like a chef
+                          </div>
+                          <div class="dropdown__product-desc__info-about">
+                            <strong>
+                              Ingredients:
+                            </strong>
+                            Tomato pulp, tomato
+                            paste, salt, dried basil,
+                            dried oregano.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--              TODO: add active for header__nav-item for clicked-->
+              <li class="header__nav-item active">
+                <a class="header__nav-link" href="geography.html">
+                  Our Geography
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="news.html">
+                  News
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="contact.html">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__mobile-menu">
+            <span class="header__mobile-menu__line header__mobile-menu__line-top"></span>
+            <span class="header__mobile-menu__line header__mobile-menu__line-middle"></span>
+            <span class="header__mobile-menu__line header__mobile-menu__line-bottom"></span>
+          </a>
+          <div class="header__language">
+            <button class="header__language-btn">
+              EN
+            </button>
+            <ul class="header__language-list">
+              <li class="header__language-item">
+                <a class="header__language-item__btn">
+                  ru
+                </a>
+              </li>
+              <li class="header__language-item">
+                <a class="header__language-item__btn">
+                  am
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="position">
+        <div class="container">
+          <ul class="position__list">
+<!--            TODO: add active for position__item-->
+            <li class="position__item active">
+              <a class="position__link" href="">home</a>
+            </li>
+            <li class="position__item">
+              <a class="position__link" href="">Geography</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="geography">
+        <div class="container">
+          <div class="geography__img">
+            <div class="img-container">
+              <div class="geography__list-container">
+                <ul class="geography__list">
+                  <li class="geography__item">
+                    Russia
+                  </li>
+                  <li class="geography__item">
+                    France
+                  </li>
+                  <li class="geography__item">
+                    Poland
+                  </li>
+                  <li class="geography__item">
+                    Belgium
+                  </li>
+                  <li class="geography__item">
+                    Germany
+                  </li>
+                  <li class="geography__item">
+                    Kyrgyzstan
+                  </li>
+                  <li class="geography__item">
+                    Georgia
+                  </li>
+                  <li class="geography__item">
+                    Ukraine
+                  </li>
+                </ul>
+                <ul class="geography__list">
+                  <li class="geography__item">
+                    Latvia
+                  </li>
+                  <li class="geography__item">
+                    Kazakhstan
+                  </li>
+                  <li class="geography__item">
+                    Kazakhstan
+                  </li>
+                  <li class="geography__item">
+                    UAE
+                  </li>
+                  <li class="geography__item">
+                    China
+                  </li>
+                  <li class="geography__item">
+                    Canada
+                  </li>
+                  <li class="geography__item">
+                    USA
+                  </li>
+                  <li class="geography__item">
+                    Israel
+                  </li>
+                </ul>
+                <ul class="geography__list">
+                  <li class="geography__item">
+                    Belarus
+                  </li>
+                  <li class="geography__item">
+                    Belarus
+                  </li>
+                  <li class="geography__item">
+                    Saudi Arabia
+                  </li>
+                  <li class="geography__item">
+                    Kuwait
+                  </li>
+                  <li class="geography__item">
+                    Kuwait
+                  </li>
+                  <li class="geography__item">
+                    Oman
+                  </li>
+                  <li class="geography__item">
+                    Qatar
+                  </li>
+                </ul>
+              </div>
+<!--              <img class="geography__img-source" src="img/geography/bg.jpg" alt="Geography image">-->
+            </div>
+          </div>
+          <h2 class="geography__caption">
+            Clients geography
+          </h2>
+          <div class="geography__desc-container">
+            <div class="geography__desc">
+              Artashat Cannery offers high quality and eco - friendly products made with special technology
+              and in accordance with international standards.
+              In addition to ready-to-eat products, Artashat Cannery also offers semi-processed
+              products and fruit and vegetable concentrates which are exported and serve
+              as raw material for major foreign producers.
+            </div>
+            <div class="geography__desc">
+              The company is a major Armenian exporter. Only 13 % of the
+              company's production is realized in the domestic market,
+              while 87 % is exported. We currently deliver products to
+              <strong>
+                23 countries:
+              </strong>
+            </div>
+          </div>
+          <div class="geography__list-container">
+            <ul class="geography__list">
+              <li class="geography__item">
+                Russia
+              </li>
+              <li class="geography__item">
+                France
+              </li>
+              <li class="geography__item">
+                Poland
+              </li>
+              <li class="geography__item">
+                Belgium
+              </li>
+              <li class="geography__item">
+                Germany
+              </li>
+              <li class="geography__item">
+                Kyrgyzstan
+              </li>
+              <li class="geography__item">
+                Georgia
+              </li>
+              <li class="geography__item">
+                Ukraine
+              </li>
+            </ul>
+            <ul class="geography__list">
+              <li class="geography__item">
+                Latvia
+              </li>
+              <li class="geography__item">
+                Kazakhstan
+              </li>
+              <li class="geography__item">
+                Kazakhstan
+              </li>
+              <li class="geography__item">
+                UAE
+              </li>
+              <li class="geography__item">
+                China
+              </li>
+              <li class="geography__item">
+                Canada
+              </li>
+              <li class="geography__item">
+                USA
+              </li>
+              <li class="geography__item">
+                Israel
+              </li>
+            </ul>
+            <ul class="geography__list">
+              <li class="geography__item">
+                Belarus
+              </li>
+              <li class="geography__item">
+                Belarus
+              </li>
+              <li class="geography__item">
+                Saudi Arabia
+              </li>
+              <li class="geography__item">
+                Kuwait
+              </li>
+              <li class="geography__item">
+                Kuwait
+              </li>
+              <li class="geography__item">
+                Oman
+              </li>
+              <li class="geography__item">
+                Qatar
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__link-container">
+        <div class="footer__nav-list__container">
+          <ul class="footer__nav-main__list">
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                Our Geography
+              </a>
+            </li>
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                News
+              </a>
+            </li>
+            <li class="footer__nav-main__item">
+              <a class="footer__nav-main__link" href="">
+                Contacts
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Company
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Who we are
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="" class="footer__nav-link">
+                Timeline
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href=""></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--youtube" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container footer__author-container">
+        <div class="footer__rights">
+          © 2020 Artashat Cannery OJSC. All Rights Reserved.
+        </div>
+        <div class="footer__author">
+          Design & DEVELOPMENT by EWORKS
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/header.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/slider-for-gallery.js"></script>
+  <script src="js/slider-for-product.js"></script>
+  <script src="js/slider-for-brand.js"></script>
+
+</body>
+</html>
