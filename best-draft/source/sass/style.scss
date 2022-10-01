@@ -1,0 +1,47 @@
+/* normalize.scss */
+@import "blocks/normalize";
+
+/* global style */
+@import "variable.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "core.scss";
+
+//Blocks
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/info";
+@import "blocks/project";
+@import "blocks/brand";
+@import "blocks/advertising";
+@import "blocks/instruction";
+@import "blocks/delivery";
+@import "blocks/features";
+@import "blocks/report";
+@import "blocks/advertising-ordinary";
+@import "blocks/feedback";
+@import "blocks/share";
+@import "blocks/view";
+@import "blocks/industrie";
+@import "blocks/contact";
+@import "blocks/error";
+@import "blocks/maintenance";
+@import "blocks/blog";
+@import "blocks/blog-view";
+@import "blocks/blog-guide";
+
+//Admin
+@import "blocks/admin-login-page";
+@import "blocks/admin-nav";
+@import "blocks/admin-testimonials";
+@import "blocks/admin-settings";
+@import "blocks/admin-users";
+@import "blocks/admin-works";
+@import "blocks/admin-industires";
+@import "blocks/admin-blog";
+@import "blocks/admin-blog-settings";
+@import "blocks/admin-forgot";
+@import "blocks/admin-finish";
+
+//Popup
+@import "blocks/popup-save";

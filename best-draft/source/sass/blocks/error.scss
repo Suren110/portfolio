@@ -1,0 +1,37 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
+  .default-logo {
+    min-width: 200px;
+  }
+
+  .default-img {
+    min-width: 500px;
+    margin-bottom: 12px;
+  }
+
+  .default-btn {
+    text-transform: capitalize;
+    padding-top: 11px;
+    padding-right: 42px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .error {
+    .default-img {
+      min-width: 280px;
+    }
+
+    .default-btn {
+      margin-bottom: 50px;
+    }
+  }
+}

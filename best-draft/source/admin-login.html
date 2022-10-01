@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--TODO: add this class only for admin-login.html-->
+<div class="wrapper-outer admin-login-page">
+  <div class="wrapper">
+    <section class="admin-login">
+      <div class="admin-login__logo">
+        <div class="img-container">
+          <img class="logo-image" src="img/logo.svg" alt="Logo">
+        </div>
+      </div>
+      <div class="admin-login__panel">
+        <div class="admin-login__panel-caption">
+          Login to Admin Panel
+        </div>
+        <div class="admin-login__panel-title">
+          Please enter your email and password to continue
+        </div>
+        <div class="admin-login__panel-form">
+          <div class="admin-login__panel-form__line">
+            <label class="admin-login__panel-form__line-name" for="email">
+              <span>
+                Email address:
+              </span>
+            </label>
+            <input class="admin-login__panel-form__line-input" type="email" id="email">
+          </div>
+          <div class="admin-login__panel-form__line">
+            <label class="admin-login__panel-form__line-name" for="password">
+              <span>
+                Password
+              </span>
+              <a class="admin-login__panel-form__line-forgot" href="">
+                Forget Password?
+              </a>
+            </label>
+            <input class="admin-login__panel-form__line-input" type="password" id="password">
+          </div>
+          <label class="admin-login__panel-form__checkbox" tabindex="0">
+            <input type="checkbox">
+            <span class="admin-login__panel-form__checkbox-icon"></span>
+            <span class="admin-login__panel-form__checkbox-text">
+              Remember Password
+            </span>
+          </label>
+          <button class="admin-login__panel-form__submit default-btn">
+            Sign In
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/only-for-error-and-maintenance.js"></script>
+</body>
+</html>

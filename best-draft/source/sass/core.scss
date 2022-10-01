@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html.active,
+html.active body {
+  overflow: hidden;
+}
+
+.block {
+  box-sizing: content-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+.wrapper-outer {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}

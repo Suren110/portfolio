@@ -1,0 +1,59 @@
+.advertising.ordinary {
+  position: relative;
+
+  &::before {
+    padding-top: 40.72%;
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1;
+  }
+
+}
+
+.ordinary-caption {
+  margin-top: 11.8%;
+  margin-bottom: 0;
+
+  line-height: 1.1;
+  font-weight: 800;
+  font-size: 4.375rem;
+  color: rgba(var(--draft-black-2), 1);
+}
+
+.ordinary-caption__blue {
+  display: block;
+  color: rgba(var(--draft-blue-light), 1);
+}
+
+@media (max-width: 1560px) {
+  .ordinary-caption {
+    margin-top: 5%;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .ordinary-caption {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ordinary-caption {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ordinary-caption {
+    margin-top: 4%;
+    font-size: 1.375rem;
+  }
+}

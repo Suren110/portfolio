@@ -1,0 +1,382 @@
+.works {
+  width: calc(100% - 45px);
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 40px;
+}
+
+.works-left {
+  flex-grow: 1;
+  margin-right: 90px;
+}
+
+.works-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .settings-config__list {
+    flex-grow: 1;
+    margin-right: 36px;
+  }
+
+  .settings-category__item-input {
+    appearance: none;
+    background-color: rgba(var(--draft-white), 1);
+  }
+
+  .settings-category__item.active .settings-category__item-input {
+    color: rgba(var(--draft-white), 1);
+    background-color: rgba(var(--draft-blue-light), 1);
+    border-color: rgba(var(--draft-blue-light), 1);
+  }
+
+  .settings-category__item-input:hover {
+    background-image: none;
+  }
+
+  .settings-category__item-input:focus {
+    border-color: rgba(223, 223, 223, 1);
+    background-image: none;
+  }
+
+  .settings-category__item-input:hover span {
+    transform: none;
+  }
+}
+
+.works-upload {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.works-upload__img .works-upload__img-name__file {
+  display: block;
+}
+
+.works-upload__banner {
+  //width: 402px;
+  flex-shrink: 0;
+  margin-right: 35px;
+
+  &.remove {
+    .works-upload__remove {
+      display: inline-block;
+    }
+  }
+}
+
+.works-upload__caption {
+  margin-bottom: 25px;
+}
+
+.works-upload__img-block {
+  display: flex;
+  align-items: center;
+}
+
+.works-upload__remove {
+  display: none;
+  appearance: none;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+
+  margin-left: 15px;
+
+  color: rgba(246, 80, 80, 1);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.works-upload__img {
+  position: relative;
+  display: inline-block;
+  border: 2px dashed rgba(177, 177, 177, 1);
+  width: 402px;
+  max-width: 402px;
+  //height: 180px;
+
+  input {
+    display: none;
+  }
+
+  &.drag {
+    border-color: rgba(var(--draft-blue-light), 1);
+  }
+}
+
+.works-upload__img-name {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-size: 0.875rem;
+}
+
+.works-upload__img-name__icon {
+  display: inline-block;
+  width: 43px;
+  height: 46px;
+  flex-shrink: 0;
+
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../img/icons/upload.svg");
+  background-size: auto 100%;
+}
+
+.works-upload__img-name__title {
+  text-align: center;
+  font-weight: 500;
+  color: rgba(var(--draft-black-2), 1);
+}
+
+.works-upload__img-name__file {
+  display: none;
+  text-align: center;
+  color: rgba(var(--draft-blue-light), 1);
+  font-weight: 600;
+}
+
+.works-upload__img-value {
+  z-index: 0;
+}
+
+.works-upload__img-source {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works-upload__thumbnail {
+  width: 200px;
+  flex-shrink: 0;
+
+  .works-upload__img {
+    width: 180px;
+    flex-shrink: 0;
+  }
+}
+
+.works-layout {
+  margin-bottom: 40px;
+}
+
+.works-layout__list-outer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.works-layout__item-outer:hover .works-layout__item-column {
+  border-color: rgba(var(--draft-blue-light), 1);
+}
+
+.works-layout__item-outer.active .works-layout__item-column__size,
+.works-layout__item-outer.active .works-upload__img-name__file {
+  display: block;
+}
+
+.works-layout__item-outer.active .works-layout__item-column {
+  border-color: rgba(var(--draft-blue-light), 1);
+}
+
+.works-layout__item-outer:not(:last-child) {
+  margin-right: 30px;
+}
+
+.works-layout__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  //display: flex;
+}
+
+.works-layout__item {
+  width: 218px;
+  flex-shrink: 0;
+  display: flex;
+
+  &.works-layout__item-one__column > .works-layout__item-column {
+    width: calc(50% - 2px);
+    height: 218px;
+  }
+
+  &.works-layout__item-one__column {
+    justify-content: space-between;
+  }
+}
+
+.works-layout__item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.works-layout__item-column {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: calc(50% - 2px);
+  height: 107px;
+  border: 1px solid rgba(174, 174, 174, 1);
+
+  input {
+    display: none;
+  }
+
+  .img-container {
+    z-index: -1;
+  }
+
+  &:only-child {
+    width: 100%;
+  }
+
+  &:nth-child(2) {
+    margin-left: auto;
+  }
+}
+
+.works-layout__item-column__size {
+  display: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: rgba(204, 204, 204, 1);
+}
+
+.works-layout__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works-layout__item-column__block {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 2px);
+
+  .works-layout__item-column {
+    width: 100%;
+  }
+
+  .works-layout__item-column:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.works-right {
+  width: 465px;
+  flex-shrink: 0;
+}
+
+.works-project {
+  height: 865px;
+
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.works-project::-webkit-scrollbar {
+  width: 4px;
+}
+
+.works-project::-webkit-scrollbar-track {
+  background-color: rgba(223, 223, 223, 1);
+}
+
+.works-project::-webkit-scrollbar-thumb {
+  background-color: rgba(67, 78, 84, 1);
+}
+
+.works-project__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  margin-right: 52px;
+}
+
+.works-project__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.works-project__item-title {
+  font-size: 0.875rem;
+  color: rgba(153, 153, 153, 1);
+  margin-bottom: 5px;
+}
+
+.works-project__item-img {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 36.6%;
+  }
+
+  &:hover .works-project__item-edit,
+  &:hover .works-project__item-delete {
+    display: inline-block;
+  }
+}
+
+.works-project__item-img__source {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works-project__item-edit,
+.works-project__item-delete {
+  position: absolute;
+  top: 13px;
+  z-index: 1;
+  display: none;
+  width: 16px;
+  height: 16px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  padding: 0;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+.works-project__item-edit {
+  right: 43px;
+  background-size: 15px auto;
+  background-image: url("../../img/icons/edit-black.svg");
+}
+
+.works-project__item-delete {
+  right: 13px;
+  background-size: 16px auto;
+  background-image: url("../../img/icons/trash.svg");
+}
+
+.works-finish .default-btn__admin-blue {
+  width: 192px;
+}

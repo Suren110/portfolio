@@ -1,0 +1,115 @@
+.admin-blog__settings {
+  width: calc(100% - 400px);
+
+  padding-top: 15px;
+  padding-bottom: 82px;
+}
+
+.admin-blog__settings-block {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 90px;
+}
+
+.admin-blog__settings-left {
+  .settings-category__name {
+    margin-bottom: 15px;
+  }
+}
+
+.admin-blog__settings-left__row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.admin-blog__settings-left__column {
+  &:not(:last-child) {
+    padding-right: 100px;
+  }
+
+  .settings-category__list {
+    flex-direction: column;
+  }
+
+  .settings-category__item {
+    position: relative;
+    margin-right: 0;
+
+    display: inline-flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:hover .settings-category__item-input {
+      color: rgba(var(--draft-blue-light), 1);
+      border-color: rgba(var(--draft-blue-light), 1);
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      display: block;
+      transform: translateX(100%);
+    }
+
+    &:hover .admin-industries__nav-item__edit,
+    &:hover .admin-industries__nav-item__delete {
+      position: absolute;
+      top: 50%;
+      display: block;
+    }
+
+    &:hover .admin-industries__nav-item__edit {
+      right: -22px;
+    }
+
+    &:hover .admin-industries__nav-item__delete {
+      right: -45px;
+    }
+  }
+
+  .settings-category__item-input {
+    width: 192px;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+
+    padding-right: 2px;
+    padding-left: 2px;
+
+    max-width: 192px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    background: none;
+  }
+
+  .settings-category__item-input {
+    background-color: rgba(var(--draft-white), 1);
+  }
+}
+
+.admin-blog__settings-right {
+  .settings-category__name {
+    margin-bottom: 15px;
+  }
+
+  .settings-category__item-input {
+    //width: 112px;
+    border-radius: 0;
+  }
+}
+
+.admin-blog__settings-save {
+  .default-btn__admin-blue {
+    width: 192px;
+    color: rgba(var(--draft-white), 1);
+  }
+}

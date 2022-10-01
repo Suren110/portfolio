@@ -1,0 +1,65 @@
+.popup-save {
+  width: 413px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-save__title {
+  display: flex;
+  align-items: center;
+
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.popup-save__title-icon {
+  width: 52px;
+  height: 52px;
+
+  margin-right: 24px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  background-image: url("../../img/icons/attention.svg");
+}
+
+.popup-save__title-text {
+  font-size: 1rem;
+  color: rgba(var(--draft-gray), 1);
+}
+
+.popup-save__status {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.popup-save__status-btn {
+  display: inline-block;
+  appearance: none;
+  width: 88px;
+  text-align: center;
+
+  background-color: rgba(236, 236, 236, 1);
+  border: 1px solid rgba(117, 117, 117, 0.5);
+  border-radius: 8px;
+
+  font-size: 0.75rem;
+  color: rgba(130, 130, 130, 1);
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: rgba(var(--draft-blue-light), 1);
+    border-color: rgba(var(--draft-blue-light), 1);
+    color: rgba(var(--draft-white), 1);
+  }
+}

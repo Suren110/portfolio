@@ -1,0 +1,255 @@
+.users {
+  padding-top: 38px;
+  padding-bottom: 40px;
+  width: 98%;
+}
+
+.users-panel {
+  display: flex;
+  //height: 840px;
+}
+
+.users-status {
+  padding-top: 25px;
+  padding-right: 24px;
+  padding-bottom: 25px;
+  padding-left: 24px;
+
+  width: 286px;
+  max-height: 100%;
+  overflow-y: auto;
+  margin-right: 22px;
+
+  border-radius: 14px;
+  border: 1px solid rgba(var(--draft-white-3), 1);
+}
+
+.users-status__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.users-status__item {
+  width: 100%;
+
+  padding-top: 8px;
+  padding-right: 21px;
+  padding-bottom: 8px;
+  padding-left: 45px;
+  border-radius: 4px;
+
+  font-size: 0.875rem;
+  color: rgba(var(--draft-blue-light), 1);
+  font-weight: 500;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background-repeat: no-repeat;
+  background-position: left 8px center;
+  background-color: rgba(var(--draft-blue-light), 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &.users-status__item-notification {
+    background-size: 30px auto;
+    background-image: url("../../img/icons/phone.svg");
+  }
+}
+
+.users-blocked {
+  border-radius: 14px;
+  border: 1px solid rgba(var(--draft-white-3), 1);
+  flex-grow: 1;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.users-blocked__header {
+  padding-top: 25px;
+  padding-right: 24px;
+  padding-bottom: 5px;
+  padding-left: 24px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-blocked__header-left {
+  width: 43.8%;
+  display: flex;
+  align-items: center;
+}
+
+.users-blocked__header-left__input {
+  flex-grow: 1;
+  margin-right: 9px;
+  border-radius: 10px;
+}
+
+.users-blocked__header-left__button {
+  flex-shrink: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 42px;
+
+  background-repeat: no-repeat;
+  background-position: left 22px center;
+  background-size: 12px auto;
+  background-image: url("../../img/icons/plus.svg");
+}
+
+.users-blocked__header-right {
+  width: 46.6%;
+  flex-shrink: 0;
+}
+
+.users-blocked__header-right__search[type="search"] {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding-left: 50px;
+  padding-right: 20px;
+
+  background-color: rgba(245, 246, 250, 1);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 18px auto;
+  background-image: url("../../img/icons/search.svg");
+
+  height: 46px;
+  border: 0.6px solid rgba(213, 213, 213, 1);
+  border-radius: 30px;
+}
+
+.users-blocked__body {
+  margin-top: auto;
+  flex-grow: 1;
+
+  //display: flex;
+  //flex-direction: column;
+}
+
+.users-blocked__date-filter {
+  //margin-top: auto;
+  display: table;
+  background-color: transparent;
+  appearance: none;
+  border: none;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 8px auto;
+  background-image: url("../../img/icons/filter.svg");
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(var(--draft-black-3), 0.7);
+
+  padding-top: 3px;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+
+  margin-left: auto;
+  margin-right: 220px;
+}
+
+.users-blocked__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  height: 744px;
+  overflow: hidden;
+  //max-height: 100%;
+  //overflow-y: auto;
+}
+
+.users-blocked__item {
+  display: flex;
+  align-items: center;
+
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  font-size: 0.875rem;
+  color: rgba(var(--draft-black-3), 1);
+  border-bottom: 1px solid rgba(var(--draft-white-3), 1);
+
+  &:hover {
+    background-color: rgba(72, 128, 255, 0.06);
+  }
+
+  &:hover .users-blocked__item-delete__btn {
+    display: block;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.users-blocked__item-name {
+  flex-grow: 1;
+}
+
+.users-blocked__item-date {
+  width: 98px;
+  flex-shrink: 0;
+}
+
+.users-blocked__item-time {
+  width: 75px;
+  flex-shrink: 0;
+}
+
+.users-blocked__item-delete {
+  width: 68px;
+  flex-shrink: 0;
+
+  display: inline-flex;
+  justify-content: center;
+}
+
+.users-blocked__item-delete__btn {
+  display: none;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  padding: 0;
+  appearance: none;
+  border: none;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px auto;
+  background-image: url("../../img/icons/trash.svg");
+}
+
+.users-blocked__pagination {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 308px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.users-blocked__pagination-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(var(--draft-black-3), 1);
+}

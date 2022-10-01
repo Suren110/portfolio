@@ -1,0 +1,50 @@
+.maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
+  .default-logo {
+    margin-bottom: 132px;
+    min-width: 200px;
+  }
+
+  .default-img {
+    width: 39%;
+    margin-bottom: 90px;
+  }
+
+  .default-img::before {
+    padding-top: 63%;
+  }
+
+  .default-title {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .maintenance {
+    .default-logo {
+      margin-bottom: 20px;
+    }
+
+    .default-img {
+      margin-top: auto;
+      width: 100%;
+      margin-bottom: 42px;
+      min-width: 280px;
+    }
+
+    .default-title {
+      font-size: 1.75rem;
+    }
+
+    .default-name {
+      font-size: 1.5rem;
+      margin-bottom: 55px;
+    }
+  }
+}
