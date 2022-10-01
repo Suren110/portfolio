@@ -1,0 +1,164 @@
+.balance {
+
+}
+
+.balance-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.balance-header__left {
+
+}
+
+.balance-header__caption {
+  margin-top: 0;
+  margin-bottom: 2px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.balance-header__caption-date {
+  color: rgba(var(--heltun-orange), 1);
+}
+
+.balance-header__title {
+  font-weight: 300;
+  color: rgba(var(--heltun-black), 0.6);
+  font-size: 1.125rem;
+}
+
+.balance-table {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.balance-table__column {
+  width: 45.12%;
+  flex-shrink: 0;
+}
+
+.balance-table__block {
+  //width: 100%;
+  margin-bottom: 40px;
+}
+
+.balance-table__caption {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+}
+
+.balance-table__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.balance-table__item {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 21px;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid rgba(var(--heltun-black), 0.1);
+
+  &.balance-table__item-header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    .balance-table__item-column {
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      color: rgba(var(--heltun-black), 0.6);
+    }
+  }
+}
+
+//.balance-table__item-column {
+//
+//}
+
+.balance-table__item-value {
+  width: 26.8%;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.balance-table__item-name {
+  flex-grow: 1;
+  font-weight: 300;
+}
+
+.balance-table__item-name__title {
+  display: block;
+  font-weight: 300;
+  font-size: 0.81rem;
+  color: rgba(var(--heltun-black), 0.6);
+}
+
+.balance-table__item-date {
+  width: 19.6%;
+  flex-shrink: 0;
+  //font-size: 0.875rem;
+}
+
+@media (max-width: 992px) {
+  .balance-header__caption {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .balance-header {
+    flex-direction: column;
+  }
+
+  .balance-header__caption {
+    margin-bottom: 5px;
+  }
+
+  .balance-header__title {
+    margin-bottom: 10px;
+  }
+
+  .balance-table {
+    flex-direction: column;
+  }
+
+  .balance-table__column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .balance-header__caption {
+    font-size: 1.4rem;
+  }
+
+  .balance-header__title {
+    font-size: 0.95rem;
+  }
+
+  .balance-table__caption {
+    font-size: 0.95rem;
+  }
+
+  .balance-table__list {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .balance-table__item-name {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

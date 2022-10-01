@@ -1,0 +1,238 @@
+.my-product {
+  position: relative;
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(var(--heltun-black), 0.1);
+  }
+
+
+  .caption {
+    margin-bottom: 22px;
+    align-items: center;
+  }
+
+  .default-btn__white {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .default-btn__black {
+    //padding-right: 33px;
+    //padding-left: 33px;
+  }
+
+  .my-product__list {
+    flex-direction: column;
+  }
+
+  .my-product__item {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .my-product__link-desc {
+    margin-left: 0;
+  }
+
+  .my-product__link-desc__caption {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1rem;
+
+    span {
+      font-weight: 300;
+    }
+  }
+}
+
+.my-product__btn {
+  display: inline-flex;
+
+  .default-btn__white {
+    margin-right: 10px;
+    transition: 300ms;
+  }
+
+  .default-btn__white.btn-part__hover::before,
+  .default-btn__white.btn-part__hover::after,
+  .default-btn__white .btn-part__hover-text::before,
+  .default-btn__white .btn-part__hover-text::after {
+    color: rgba(var(--heltun-orange), 1);
+  }
+
+  .default-btn__white:hover {
+    color: rgba(var(--heltun-orange), 1);
+    transition: 300ms;
+  }
+}
+
+.my-product__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-product__item {
+  width: 31%;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+}
+
+.my-product__item:not(:nth-child(3n)) {
+  margin-right: calc(7% / 2);
+}
+
+.my-product__link {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.my-product__link-item {
+  position: relative;
+  width: 40%;
+  flex-shrink: 0;
+  max-width: 145px;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.my-product__link-item__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.my-product__link-desc {
+  margin-left: 20px;
+}
+
+.my-product__link-desc__caption {
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  color: rgba(var(--heltun-black), 1);
+
+  margin-bottom: 26px;
+}
+
+.my-product__link-desc__dsk,
+.my-product__link-desc__warranty {
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgba(var(--heltun-black), 1);
+  word-break: break-word;
+}
+
+.my-product__link-desc__dsk-name,
+.my-product__link-desc__warranty-name {
+  font-weight: 700;
+}
+
+.my-product__link-desc__warranty.expired {
+  font-size: 0;
+
+  .my-product__link-desc__warranty-name {
+    display: none;
+  }
+
+  &::after {
+    content: "Warranty expired";
+    display: inline-block;
+    color: rgba(var(--heltun-black), 0.6);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+.my-product__link-desc__dsk {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  .my-product {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .caption-title {
+      font-size: 1.56rem;
+    }
+  }
+
+  .my-product__btn .default-btn__black,
+  .my-product__btn .default-btn__white {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .my-product__item {
+    width: calc(50% - 5px);
+  }
+
+  .my-product__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .my-product__item:nth-child(2n) {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-product {
+    .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+
+    .caption-title {
+      font-size: 1.56rem;
+      margin-bottom: 15px;
+    }
+  }
+
+  .my-product__btn .default-btn__black,
+  .my-product__btn .default-btn__white {
+    font-size: 0.75rem;
+  }
+
+  .my-product__list {
+    //flex-direction: column;
+  }
+
+  .my-product__item {
+    width: 100%;
+  }
+
+  .my-product__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .my-product__item:nth-child(2n) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-product__btn .default-btn__black,
+  .my-product__btn .default-btn__white {
+    font-size: 0.7rem;
+  }
+
+  .faq-info__contact-btn {
+    margin-bottom: 10px;
+  }
+}

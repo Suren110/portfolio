@@ -1,0 +1,22 @@
+.popup-return__product {
+  .default-form {
+    width: 52%;
+  }
+
+  .register-form__line-input {
+    resize: none;
+  }
+
+  .register-form__line-dropdown {
+    background-size: 8px 100%;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/triangle.svg");
+  }
+}
+
+@media (max-width: 992px) {
+  .popup-return__product .default-form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper-outer">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="logo header-logo" href="index.html">
+            <div class="img-container">
+              <img class="logo-img" src="img/logo.png" alt="Logo">
+            </div>
+          </a>
+          <nav class="nav header-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link nav-link__log-in btn-part__hover" href="">
+                  <span class="btn-part__hover-text">
+                    log in
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__sign-in btn-part__hover" href="register.html">
+                  <span class="btn-part__hover-text">
+                    free sign up
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="register">
+        <div class="container">
+          <div class="register-left">
+            <h2 class="register-left__caption">
+              Sign Up
+            </h2>
+            <div class="register-left__title">
+              Already have an account?
+              <a class="register-left__title-link" href="">
+                Log in here
+              </a>
+            </div>
+            <form class="register-form" action="">
+              <div class="register-form__line">
+                <div class="register-form__line-hint">
+                  <label class="register-form__line-hint__caption" for="name">
+                    Full name
+                  </label>
+                </div>
+                <input class="register-form__line-input" type="text" id="name">
+              </div>
+              <div class="register-form__line">
+                <div class="register-form__line-hint">
+                  <label class="register-form__line-hint__caption" for="email">
+                    Email address
+                  </label>
+                </div>
+                <input class="register-form__line-input" type="email" id="email">
+              </div>
+              <div class="register-form__line">
+                <div class="register-form__line-hint">
+                  <label class="register-form__line-hint__caption" for="password">
+                    Password
+                  </label>
+                  <button class="register-form__line-hint__btn">
+                    Show
+                  </button>
+                </div>
+                <input class="register-form__line-input" type="password" id="password">
+              </div>
+              <div class="register-form__line">
+                <div class="register-form__line-hint">
+                  <label class="register-form__line-hint__caption" for="repeat-password">
+                    Repeat password
+                  </label>
+                  <button class="register-form__line-hint__btn">
+                    Show
+                  </button>
+                </div>
+                <input class="register-form__line-input" type="password" id="repeat-password">
+              </div>
+              <div class="register-form__rule">
+                <label class="register-form__rule-btn">
+                  <input class="register-form__rule-checkbox" type="checkbox" id="checkbox">
+                  <span class="register-form__rule-btn__checkbox"></span>
+                </label>
+                <label class="register-form__rule-hint" for="checkbox">
+                  By clicking the "Sign Up" button, you are creating a Heltun account,
+                  and you agree to Heltun’s
+                  <a class="register-form__rule-hint__link" href="">
+                    Terms of Use
+                  </a>
+                  and
+                  <a class="register-form__rule-hint__link" href="">
+                    Privacy Policy.
+                  </a>
+                </label>
+              </div>
+              <div class="register-form__send">
+                <a class="register-form__send-btn btn-part__hover" href="">
+                  <span class="btn-part__hover-text">
+                      Sign up
+                  </span>
+                </a>
+                <div class="register-form__send-captcha">
+                  <div class="g-recaptcha brochure__form__captcha" data-sitekey="https://hakobyaneduard.github.io/heltun/build"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="register-right">
+            <div class="img-container">
+              <img class="register-right__img" src="img/register/bg.jpg" alt="Register image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-found">
+          <div class="footer-found__info">
+            <h4 class="footer-found__info-caption">
+              Made in Armenia
+            </h4>
+            <div class="footer-found__info-desc">
+              The Land of Surprising Engineering
+            </div>
+          </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 23 23">
+                  <rect x="6.59" y="2.24" width="14.35" height="20.76"/>
+                  <path d="M21.34,0H1.66A1.66,1.66,0,0,0,0,1.66V21.34A1.66,1.66,0,0,0,1.66,23H12.29V14.11h-3V10.62h3V8.06c0-3,1.81-4.59,4.46-4.59a25,25,0,0,1,2.68.14V6.72H17.6c-1.44,0-1.72.68-1.72,1.69v2.21h3.45l-.45,3.49h-3V23h5.46A1.66,1.66,0,0,0,23,21.34V1.66A1.66,1.66,0,0,0,21.34,0Zm0,0" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 23 23">
+                  <rect x="3.53" y="3.12" width="15.71" height="14.71"/>
+                  <path d="M21.34,0H1.66A1.66,1.66,0,0,0,0,1.66V21.34A1.66,1.66,0,0,0,1.66,23H21.34A1.66,1.66,0,0,0,23,21.34V1.66A1.66,1.66,0,0,0,21.34,0ZM16.75,9c0,.11,0,.22,0,.34a7.46,7.46,0,0,1-7.51,7.51h0a7.48,7.48,0,0,1-4-1.19,4.44,4.44,0,0,0,.63,0,5.27,5.27,0,0,0,3.28-1.13,2.65,2.65,0,0,1-2.47-1.83,2.81,2.81,0,0,0,.5,0,2.74,2.74,0,0,0,.7-.09,2.64,2.64,0,0,1-2.12-2.59v0a2.52,2.52,0,0,0,1.19.33,2.65,2.65,0,0,1-1.17-2.2A2.59,2.59,0,0,1,6.1,6.85,7.49,7.49,0,0,0,11.54,9.6a2.35,2.35,0,0,1-.07-.6A2.64,2.64,0,0,1,16,7.2a5.36,5.36,0,0,0,1.67-.64A2.67,2.67,0,0,1,16.55,8a5.52,5.52,0,0,0,1.52-.42A5.54,5.54,0,0,1,16.75,9Zm0,0" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="" aria-label="Linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 23 23">
+                  <rect x="1.97" y="3.78" width="18.79" height="15.31"/>
+                  <path d="M21.34,0H1.66A1.66,1.66,0,0,0,0,1.66V21.34A1.66,1.66,0,0,0,1.66,23H21.34A1.66,1.66,0,0,0,23,21.34V1.66A1.66,1.66,0,0,0,21.34,0ZM8.16,17.38H5.36V9h2.8ZM6.76,7.81h0a1.46,1.46,0,1,1,0-2.91,1.46,1.46,0,1,1,0,2.91Zm11.5,9.57h-2.8v-4.5c0-1.14-.41-1.91-1.42-1.91a1.52,1.52,0,0,0-1.44,1,2,2,0,0,0-.09.68v4.7H9.71s0-7.63,0-8.42h2.8v1.19A2.79,2.79,0,0,1,15,8.76c1.85,0,3.23,1.21,3.23,3.79Zm0,0" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item-caption">
+              Company
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                About us
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Subscribe
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Become a reseller
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Where to buy
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Support
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item footer-nav__item-caption">
+              products
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Heating thermostat
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Fan coil thermostat
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Touch panel switch
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                High load switch
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                Relay switch quinto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-rights">
+        <div class="footer-rights__caption">
+          © 2020 HELTUN Inc. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/register.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

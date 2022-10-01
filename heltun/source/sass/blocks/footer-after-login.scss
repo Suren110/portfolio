@@ -1,0 +1,35 @@
+.after-login {
+  //.footer {
+  //  padding-top: 16px;
+  //  padding-bottom: 16px;
+  //
+  //  .container:first-child {
+  //    border-top: 0;
+  //    margin-bottom: 0;
+  //    padding: 0;
+  //  }
+  //}
+}
+
+
+@media (max-width: 667px) {
+  .after-login {
+    //.footer .container:first-child {
+    //  flex-direction: row;
+    //}
+  }
+}
+
+@media (max-width: 480px) {
+  .after-login {
+    //.social-list {
+    //  order: -1;
+    //  margin-bottom: 10px;
+    //}
+    //
+    //.footer .container:first-child {
+    //  flex-direction: column;
+    //  align-items: flex-start;
+    //}
+  }
+}

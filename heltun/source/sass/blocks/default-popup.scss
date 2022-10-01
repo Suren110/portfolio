@@ -1,0 +1,137 @@
+.default-popup__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 5;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  //padding-top: 6.25%;
+  //overflow-y: auto;
+  //max-height: 100%;
+  background-color: rgba(var(--heltun-white), 0.8);
+
+  &.active {
+    display: flex;
+  }
+}
+
+.default-popup {
+  position: relative;
+  width: 53%;
+
+  max-height: 100%;
+  overflow-y: auto;
+
+  padding-top: 39px;
+  padding-right: 2.5%;
+  padding-bottom: 58px;
+  padding-left: 2.5%;
+
+  background-color: rgba(var(--heltun-white), 1);
+  border: 2px solid rgba(var(--heltun-black), 1);
+}
+
+.default-popup__nav__close {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+  z-index: 1;
+
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.default-popup__nav__close-info {
+  display: inline-flex;
+  align-items: center;
+}
+
+.default-popup__nav__close-info__caption {
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: rgba(var(--heltun-black), 0.6);
+  margin-right: 10px;
+}
+
+.default-popup__nav__close-info__icon {
+  width: 25px;
+  height: 23px;
+  flex-shrink: 0;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px auto;
+  background-color: rgba(var(--heltun-black), 1);
+  background-image: url("../../img/icons/delete-white.svg");
+}
+
+.default-popup__caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: rgba(var(--heltun-black), 1);
+  margin-bottom: 50px;
+
+  strong {
+    color: rgba(var(--heltun-orange), 1);
+  }
+}
+
+.default-popup__btn {
+  background-color: rgba(var(--heltun-white), 1);
+  color: rgba(var(--heltun-black), 1);
+  border-color: rgba(var(--heltun-black), 1);
+  border-width: 2px;
+}
+
+@media (max-width: 1280px) {
+  .default-popup {
+    width: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .default-popup {
+    width: 85%;
+  }
+
+  .default-popup__caption {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .default-popup {
+    width: 90%;
+  }
+
+  .default-popup__caption {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .default-popup__hint {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .default-popup {
+    width: 95%;
+  }
+
+  .default-popup__caption {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+}

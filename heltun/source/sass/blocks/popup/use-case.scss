@@ -1,0 +1,18 @@
+.popup-use__case {
+  .default-form {
+    width: 52%;
+    margin-bottom: 40px;
+  }
+
+  .register-form__line-input {
+    resize: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup-use__case {
+    .default-form {
+      width: 100%;
+    }
+  }
+}

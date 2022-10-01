@@ -1,0 +1,39 @@
+/* normalize.scss */
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+/* global style */
+@import "variable.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "core.scss";
+
+//Main blocks
+@import "blocks/header";
+@import "blocks/header-after-login";
+@import "blocks/footer";
+@import "blocks/footer-after-login";
+
+//register
+@import "blocks/guide";
+@import "blocks/product";
+@import "blocks/register";
+@import "blocks/welcome";
+@import "blocks/point";
+@import "blocks/my-product";
+@import "blocks/faq";
+@import "blocks/bonus";
+@import "blocks/balance";
+@import "blocks/redeem";
+@import "blocks/faq-question";
+@import "blocks/account";
+@import "blocks/item";
+@import "blocks/details";
+@import "blocks/default-popup";
+
+//popup
+@import "blocks/popup/register-product";
+@import "blocks/popup/return-product";
+@import "blocks/popup/thank-you";
+@import "blocks/popup/use-case";
+@import "blocks/popup/review-earn";
+@import "blocks/popup/earn-point";

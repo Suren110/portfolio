@@ -1,0 +1,45 @@
+.popup-review__earn {
+  .default-form {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 45px;
+    width: 60%;
+  }
+
+  .default-popup__btn {
+    margin-top: 24px;
+  }
+
+  .register-form__line {
+    margin-right: 17px;
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup-review__earn {
+    .default-form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-review__earn {
+    .default-form {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .register-form__line {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .default-popup__btn {
+      margin-right: auto;
+    }
+  }
+}
